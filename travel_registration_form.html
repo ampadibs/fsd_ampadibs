@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Travel Reg Form</title>
+
+<style>
+fieldset{
+border-radius:10px;
+margin-right:400px;
+margin-left:400px;
+background:linear-gradient(orange,lightblue,green);
+box-shadow:15px 1px 10px black;
+margin-top:140px;
+}
+
+body{
+background-color:lightgray;
+}
+
+input{
+background-color:bisque;
+border:none;
+}
+
+legend{
+text-align:center;
+padding:10px;
+}
+
+label{
+margin-left:300px;
+color:blue;
+}
+
+button{
+margin-left:400px;
+background-color:green;
+border:none;
+border-radius:5px;
+padding:5px;
+}
+
+button:hover{
+background-color:greenyellow;
+}
+
+select{
+margin-left:300px;
+margin-bottom:15px;
+width:250px;
+height:20px;
+background-color:orange;
+}
+
+p{
+margin-left:350px;
+width:130px;
+}
+</style>
+
+</head>
+
+<body>
+
+<form>
+<fieldset>
+<legend><b>Travel Reg Form</b></legend>
+
+<select>
+<option>--Select--</option>
+<option>Bus</option>
+<option>Train</option>
+<option>Flight</option>
+</select><br>
+
+<label>From:</label>
+<input type="text" required><br><br>
+
+<label>To:</label>
+<input type="text" required><br><br>
+
+<label>Date of Travelling:</label>
+<input type="date" required><br><br>
+
+<label>Fname:</label>
+<input type="text" required><br><br>
+
+<label>Lname:</label>
+<input type="text" required><br><br>
+
+<label>Gender:</label>
+Male<input type="radio" name="Gender" required>
+Female<input type="radio" name="Gender" required>
+Others<input type="radio" name="Gender" required><br><br>
+
+<label>Age:</label>
+<input type="number" required><br><br>
+
+<label>Phno:</label>
+<input type="number" required><br><br>
+
+<label>Email:</label>
+<input type="email" required><br><br>
+
+<label>Password:</label>
+<input type="password" required><br><br>
+
+<button type="submit">Reg in</button>
+<p>Forgotten password</p>
+
+</fieldset>
+</form>
+
+</body>
+</html>

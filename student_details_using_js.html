@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Details</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f2f2f2;
+text-align:center;
+}
+
+.box{
+background:white;
+width:300px;
+margin:80px auto;
+padding:15px;
+border:1px solid #ccc;
+}
+
+input{
+width:90%;
+padding:5px;
+margin:5px;
+}
+
+button{
+margin-top:10px;
+padding:5px 10px;
+}
+
+#output{
+margin-top:15px;
+background:#eee;
+padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+<h3>Student Details</h3>
+
+<input type="text" id="name" placeholder="Student Name"><br>
+<input type="number" id="age" placeholder="Age"><br>
+<input type="text" id="course" placeholder="Course"><br>
+
+<button onclick="showDetails()">Submit</button>
+
+<div id="output"></div>
+</div>
+
+<script>
+function showDetails(){
+
+let name=document.getElementById("name").value;
+let age=document.getElementById("age").value;
+let course=document.getElementById("course").value;
+
+document.getElementById("output").innerHTML=
+"Name: "+name+"<br>"+
+"Age: "+age+"<br>"+
+"Course: "+course;
+
+}
+</script>
+
+</body>
+</html>

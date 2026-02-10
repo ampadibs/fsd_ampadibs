@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrow Function Case Study</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+.box{
+background:white;
+width:300px;
+margin:40px auto;
+padding:15px;
+border:1px solid #ccc;
+}
+
+input{
+width:90%;
+padding:5px;
+margin:5px;
+}
+
+button{
+margin-top:10px;
+padding:5px 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+<h3>Simple Calculator</h3>
+
+<input type="number" id="n1" placeholder="Number 1">
+<input type="number" id="n2" placeholder="Number 2">
+
+<button onclick="add()">Add</button>
+<button onclick="sub()">Sub</button>
+
+<p id="calcResult"></p>
+</div>
+
+<div class="box">
+<h3>Marriage Eligibility</h3>
+
+<input type="number" id="age" placeholder="Enter Age">
+
+<button onclick="checkAge()">Check</button>
+
+<p id="ageResult"></p>
+</div>
+
+<script>
+
+// arrow functions
+const add = () => {
+let a=Number(document.getElementById("n1").value);
+let b=Number(document.getElementById("n2").value);
+document.getElementById("calcResult").innerText="Result: "+(a+b);
+}
+
+const sub = () => {
+let a=Number(document.getElementById("n1").value);
+let b=Number(document.getElementById("n2").value);
+document.getElementById("calcResult").innerText="Result: "+(a-b);
+}
+
+const checkAge = () => {
+let age=Number(document.getElementById("age").value);
+
+if(age>=21){
+document.getElementById("ageResult").innerText="Eligible for Marriage";
+}
+else{
+document.getElementById("ageResult").innerText="Not Eligible";
+}
+}
+
+</script>
+
+</body>
+</html>
